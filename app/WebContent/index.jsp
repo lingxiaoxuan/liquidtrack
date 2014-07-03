@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Information Collection</title>
+  <title>Liquid Track System</title>
   <link href="/css/bootstrap.css" rel="stylesheet">
   <link href="/css/style.css" rel="stylesheet">	
 <script src="/js/jquery-2.0.3.min.js"></script>

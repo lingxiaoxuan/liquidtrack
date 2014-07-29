@@ -111,4 +111,14 @@
     <servlet-name>UpdateProfileServlet</servlet-name>
     <url-pattern>/updateProfile</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <display-name>SearchPWServlet</display-name>
+    <servlet-name>SearchPWServlet</servlet-name>
+    <servlet-class>com.ibm.bluemix.samples.SearchPWServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchPWServlet</servlet-name>
+    <url-pattern>/searchPW</url-pattern>
+  </servlet-mapping>
 </web-app>

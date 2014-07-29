@@ -4,15 +4,6 @@
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <display-name>HomeServlet</display-name>
-    <servlet-name>HomeServlet</servlet-name>
-    <servlet-class>com.ibm.bluemix.samples.HomeServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>HomeServlet</servlet-name>
-    <url-pattern>/home</url-pattern>
-  </servlet-mapping>
-  <servlet>
     <display-name>DeleteServlet</display-name>
     <servlet-name>DeleteServlet</servlet-name>
     <servlet-class>com.ibm.bluemix.samples.DeleteServlet</servlet-class>

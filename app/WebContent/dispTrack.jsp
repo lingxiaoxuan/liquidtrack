@@ -28,12 +28,15 @@
 			
 			if (count != 1) {
 				alert("count is " + count + ", please only choose one");
-				return;
+				return false;
 			}
 
 			var notesID = ckId.split('_')[0];
 			var liquidID = ckId.split('_')[1];
 
+			if (notesID == "" || liquidID == "") {
+				return false;
+			}
 			window.location.href="/updateTrack?NotesID=" + notesID + "&LiquidID=" + liquidID; 
 		};
 		
@@ -47,7 +50,7 @@
 			});
 			
 			if (count < 1) {
-				return;
+				return false;
 			}
 			
 			var con = confirm("these tracks will be deleted, are you sure?");
@@ -155,7 +158,7 @@
         	 for (EntityTrack track : trackList) {
         		 %>
      		        <tr>
-			  			<td><input type="checkbox" name="ckCheck" id=<%=track.getNotesID() + "_" + track.getLiquidID() %>></td>
+			  			<td><input type="checkbox" name="ckCheck" id="<%=track.getNotesID() + "_" + track.getLiquidID() %>"></td>
 			  			<td><%= track.getNotesID() %></td>
 			  			<td><%= track.getLiquidID() %></td>
 			  			<td><%= track.getName() %></td>

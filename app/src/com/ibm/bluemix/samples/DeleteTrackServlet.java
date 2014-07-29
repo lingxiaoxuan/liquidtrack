@@ -27,7 +27,9 @@ public class DeleteTrackServlet extends HttpServlet {
 					if (!("").equals(str)) {
 						notesID = str.split("_")[0];
 						liquidID = str.split("_")[1];
-						rows += db.deleteTrack(notesID, liquidID);
+						if (liquidID != null && !"".equals(liquidID)) {
+							rows += db.deleteTrack(notesID, liquidID);
+						}
 					}
 				}
 				System.out.printf("%d", rows);

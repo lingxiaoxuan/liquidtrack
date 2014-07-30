@@ -38,9 +38,4 @@ public class DeleteTrackServlet extends HttpServlet {
 			e.printStackTrace(System.err);
 		}
 	}
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> origin/master

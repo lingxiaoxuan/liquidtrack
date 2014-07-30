@@ -121,4 +121,14 @@
     <servlet-name>SearchPWServlet</servlet-name>
     <url-pattern>/searchPW</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <display-name>AdminServlet</display-name>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>com.ibm.bluemix.samples.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
 </web-app>

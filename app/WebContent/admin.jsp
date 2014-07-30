@@ -29,7 +29,7 @@
 	          <li><a href="/updateProfile">Profile</a></li>
 	          <li><a href="/dispTrack">History</a></li>
 	          <%if ("1000".equals(session.getAttribute("RoleID"))){ %>
-	          <li><a href="admin.jsp">Admin</a></li>
+	          <li><a href="/admin">Admin</a></li>
 	          <%} %>
 			  <li><a href="login.jsp">Logout</a></li>
 	         </ul>
